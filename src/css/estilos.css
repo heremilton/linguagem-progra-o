@@ -1,164 +1,159 @@
+/* Configurações gerais do corpo da página */
 body {
-    font-family: "Poppins", sans-serif;
-    background-image: url("../imagens/windows.png");
-    background-size: cover;
-    background-position: center;
+    font-family: "Poppins", sans-serif; /* Define a fonte padrão da página */
+    background-image: url("../imagens/windows.png"); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área da tela */
+    background-position: center; /* Centraliza a imagem de fundo */
 }
 
+/* Adiciona um efeito de desfoque no fundo da página */
 body::before {
-    content: "";
+    content: ""; /* Cria um pseudo-elemento para o efeito de desfoque */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    backdrop-filter: blur(8px);
+    z-index: -1; /* Coloca o elemento no fundo da pilha de elementos */
+    backdrop-filter: blur(8px); /* Aplica um desfoque de 8px ao fundo */
 }
 
+/* Estilização da área principal */
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    min-height: 100vh;
+    display: flex; /* Exibe os elementos filhos em linha */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    min-height: 100vh; /* Define a altura mínima como a altura da janela */
 }
 
+/* Estilos para a seção que lista programadores */
 .programadores {
-    display: flex;
-    gap: 30px;
-    padding: 30px 0;
+    display: flex; /* Exibe os cartões em linha */
+    gap: 30px; /* Define o espaçamento entre os cartões */
+    padding: 30px 0; /* Espaçamento interno no topo e embaixo */
 }
 
+/* Estilos do cartão de cada programador */
 .cartao-programador {
-    display: none;
-    max-width: 360px;
-    border-radius: 10px;
-    
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 
-    7px 29px 0px;
+    display: none; /* Esconde o cartão por padrão */
+    max-width: 360px; /* Define a largura máxima do cartão */
+    border-radius: 10px; /* Arredonda os cantos do cartão */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /* Sombra sutil */
 }
 
+/* Exibe o cartão quando a classe "aberto" é adicionada */
 .cartao-programador.aberto {
     display: block;
 }
 
+/* Estilos para a imagem do cartão */
 .cartao-programador img {
-    width: 100%;
-    height: 100%;
-    margin-top: 10px;
+    width: 100%; /* Imagem ocupa toda a largura do cartão */
+    height: 100%; /* Imagem ocupa toda a altura definida */
+    margin-top: 10px; /* Espaço no topo da imagem */
 }
 
+/* Topo do cartão com nome e tipo */
 .cartao-programador .cartao-topo {
-    padding: 30px 40px 0;
+    padding: 30px 40px 0; /* Espaçamento no topo e nas laterais */
 }
 
+/* Estilo para o nome do programador */
 .cartao-programador .nome {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Espaço inferior para separação */
 }
 
+/* Estilo para o tipo de programador */
 .cartao-programador .tipo {
-    background-color: #ffffff;
-    font-size: 12px;
-    opacity: 0.7;
-    border-radius: 10px;
-    padding: 2px 10px;
+    background-color: #ffffff; /* Fundo branco */
+    font-size: 12px; /* Tamanho da fonte pequeno */
+    opacity: 0.7; /* Transparência no fundo */
+    border-radius: 10px; /* Arredonda os cantos */
+    padding: 2px 10px; /* Espaçamento interno */
 }
 
+/* Seção de detalhes do programador */
 .cartao-programador .detalhes {
-    color: #ffffff;
+    color: #ffffff; /* Texto branco */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Espaça o conteúdo igualmente */
+    align-items: center; /* Alinha o conteúdo ao centro verticalmente */
 }
 
+/* Informações adicionais no cartão */
 .cartao-programador .cartao-informacoes {
-    background-color: #ffffff;
+    background-color: #ffffff; /* Fundo branco */
     display: flex;
     justify-content: space-between;
-    padding: 80px 30px 50px;
-    margin-top: -70px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    padding: 80px 30px 50px; /* Espaçamento interno */
+    margin-top: -70px; /* Ajusta a posição vertical */
+    border-bottom-left-radius: 8px; /* Arredonda canto inferior esquerdo */
+    border-bottom-right-radius: 8px; /* Arredonda canto inferior direito */
 }
+
 .cartao-programador .cartao-informacoes h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #6b727a;
+    font-size: 20px; /* Tamanho da fonte maior para o título */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    border-bottom: 1px solid #6b727a; /* Linha decorativa */
 }
 
+/* Estilo para a descrição no cartão */
 .cartao-programador .cartao-informacoes .descricao {
-    padding: 0 10px;
-    font-size: 15px;
-    max-height: 150px;
-    overflow: scroll;
+    padding: 0 10px; /* Espaço nas laterais */
+    font-size: 15px; /* Tamanho da fonte menor */
+    max-height: 150px; /* Altura máxima da área de descrição */
+    overflow: scroll; /* Permite rolagem caso ultrapasse a altura */
 }
 
-.tipo-dinamico {
-    background-color: rgb(46, 143, 240);
-}
- 
-.tipo-poo {
-    background-color: #f15000d2;
-}
+/* Cores personalizadas para diferentes tipos de programadores */
+.tipo-dinamico { background-color: rgb(46, 143, 240); }
+.tipo-poo { background-color: #f15000d2; }
+.tipo-script { background-color: #015c98; }
+.tipo-adaptável { background-color: #49d0b0; }
+.tipo-multiplataforma { background-color: #ba68c8; }
+.tipo-forte { background-color: #c29791; }
 
-.tipo-script {
-    background-color: #015c98;
-
-}
-
-.tipo-adaptável {
-    background-color: #49d0b0;
-
-}
-
-.tipo-multiplataforma {
-    background-color: #ba68c8;
-
-}
-
-.tipo-fraca {
-    background-color: #c29791;
-
-}
-
+/* Lista de programadores */
 .listagem {
-    
-    max-width: 200px;
+    max-width: 200px; /* Define a largura máxima da lista */
 }
 
+/* Estilo para imagem de cada item na listagem */
 .listagem .programador img {
-    width: 30%;
+    width: 30%; /* A imagem ocupa 30% da largura do item */
 }
 
+/* Estilo de cada item na lista */
 .listagem .programador {
-    background-color: #6b727a;
-    color: #ffffff;
-
+    background-color: #6b727a; /* Fundo cinza escuro */
+    color: #ffffff; /* Texto branco */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    min-height: 70px;
-
-    transition: 0.15 ease-in-out;
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+    justify-content: space-between; /* Espaça o conteúdo igualmente */
+    padding: 0 5px; /* Espaço nas laterais */
+    margin-bottom: 10px; /* Espaço entre os itens */
+    cursor: pointer; /* Exibe o cursor de clique */
+    border-top-left-radius: 30px; /* Arredonda o canto superior esquerdo */
+    border-bottom-left-radius: 30px; /* Arredonda o canto inferior esquerdo */
+    min-height: 70px; /* Altura mínima do item */
+    transition: 0.15s ease-in-out; /* Transição suave ao interagir */
 }
 
+/* Efeito de escala ao passar o mouse sobre o item da lista */
 .listagem .programador:hover {
     transform: scale(1.05);
 }
 
+/* Estilo para o texto dentro do item da lista */
 .listagem .programador span {
-    padding: 20px;
+    padding: 20px; /* Espaço ao redor do texto */
 }
 
+/* Estilo para o item ativo na lista */
 .listagem .programador.ativo {
-    background-color: #fa6668;
+    background-color: #fa6668; /* Cor de fundo para o item ativo */
 }
+
 
 
 

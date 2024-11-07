@@ -1,9 +1,15 @@
-* {
+/* Reseta o padding e a margem de todos os elementos, 
+   para garantir uma base uniforme em todos os navegadores.
+   Define também o box-sizing para 'border-box', o que facilita 
+   o controle de largura dos elementos ao incluir padding e borda. */
+   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Remove os marcadores das listas não ordenadas (ul),
+   tornando-as listas estilizadas via CSS, se necessário. */
 ul {
     list-style-type: none;
 }

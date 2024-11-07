@@ -7,23 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programadores - Varias linguagens de programacao</title>
 
+    <!-- Link para o reset CSS para padronizar o estilo base em diferentes navegadores -->
     <link rel="stylesheet" href="./src/css/reset.css">
+    <!-- Link para o CSS principal com estilos do site -->
     <link rel="stylesheet" href="./src/css/estilos.css">
+    <!-- Link para o CSS responsivo, adaptando o layout para diferentes tamanhos de tela -->
     <link rel="stylesheet" href="./src/css/responsivo.css">
 
+    <!-- Pré-conexão para carregar fontes de forma otimizada -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa a fonte Poppins do Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <main>
+        <!-- Contêiner principal para os cartões de programadores -->
         <div class="programadores">
             <div class="cartoes-programador">
-                <div class="cartao-programador 
-                   tipo-dinamico aberto" id="cartao-python">
+                <!-- Cartão do programador Python com classe específica para estilo -->
+                <div class="cartao-programador tipo-dinamico aberto" id="cartao-python">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">python</h2>
@@ -37,10 +43,10 @@
                         </div>
                     </div>
 
+                    <!-- Seção com descrição do Python -->
                     <div class="cartao-informacoes">
                         <div class="descricao">
                             <h3>Descrição</h3>
-
                             <p>O Python é uma linguagem de programação interpretada, interativa e orientada a objetos. O
                                 mesmo incorporou módulos, exceções, tipagem dinâmica, tipos de dados dinâmicos de alto
                                 nível e classes. O Python é uma linguagem de uso geral, ou seja, não é especializada em
@@ -50,6 +56,7 @@
                     </div>
                 </div>
 
+                <!-- Cartão do programador Java -->
                 <div class="cartao-programador tipo-poo" id="cartao-java">
                     <div class="cartao-topo">
                         <div class="detalhes">
@@ -68,15 +75,12 @@
                         <div class="descricao">
                             <h3>Descrição</h3>
                             <p>Java é uma linguagem de programação orientada a objetos, multiplataforma e centrada em
-                                rede, que é amplamente utilizada para codificar aplicações
-                                A linguagem Java é interpretada, o que significa que usa uma máquina virtual, a Java
-                                Virtual Machine (JVM), para gerar um código independente chamado bytecode. A JVM traduz
-                                o bytecode para o código de cada máquina.
-                                O Java é uma linguagem de programação popular orientada a objetos e multiplataforma.</p>
+                                rede, que é amplamente utilizada para codificar aplicações. A linguagem Java é interpretada, usando a máquina virtual Java (JVM) para gerar um código independente chamado bytecode, traduzido para o código de cada máquina.</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Cartão do programador PHP -->
                 <div class="cartao-programador tipo-script " id="cartao-php">
                     <div class="cartao-topo">
                         <div class="detalhes">
@@ -102,6 +106,7 @@
                     </div>
                 </div>
 
+                <!-- Cartão do programador C++ -->
                 <div class="cartao-programador tipo-adaptável" id="cartao-c++">
                     <div class="cartao-topo">
                         <div class="detalhes">
@@ -119,7 +124,6 @@
                     <div class="cartao-informacoes">
                         <div class="descricao">
                             <h3>Descrição</h3>
-
                             <p>O C++ teve grande impacto no desenvolvimento de sistemas operacionais como Windows e
                                 Linux. O C++ é uma linguagem de programação de propósito geral, criada como uma extensão
                                 da linguagem C. Sua sintaxe permite programação de alto nível e oferece controle direto
@@ -128,6 +132,7 @@
                     </div>
                 </div>
 
+                <!-- Cartão do programador Kotlin -->
                 <div class="cartao-programador tipo-multiplataforma" id="cartao-kotlin">
                     <div class="cartao-topo">
                         <div class="detalhes">
@@ -145,22 +150,20 @@
                     <div class="cartao-informacoes">
                         <div class="descricao">
                             <h3>Descrição</h3>
-                            <p>Kotlin é uma linguagem de programação multiuso. A gente consegue utilizá-la na
-                                programação back-end (recursos e estruturas que garantem a realização de ações em um
-                                site, por exemplo), front-end (parte visual de um site) mas é no desenvolvimento mobile,
-                                especialmente Android, que ela se destaca.</p>
+                            <p>Kotlin é uma linguagem de programação multiuso. Ela se destaca em desenvolvimento mobile, especialmente Android.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="cartao-programador tipo-fraca" id="cartao-javascript">
+                <!-- Cartão do programador JavaScript -->
+                <div class="cartao-programador tipo-forte" id="cartao-javascript">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Javascript</h2>
                             <span>#062</span>
                         </div>
 
-                        <span class="tipo">fraca</span>
+                        <span class="tipo">forte</span>
 
                         <div class="cartao-imagem">
                             <img src="./src/imagens/js.png" alt="Javascript" />
@@ -170,12 +173,13 @@
                     <div class="cartao-informacoes">
                         <div class="descricao">
                             <h3>Descrição</h3>
-                            <p>JavaScript é uma linguagem de programação que permite a criação de páginas interativas na internet. Ela é uma das tecnologias principais da World Wide Web e é usada para melhorar a experiência do usuário.
-                                O JavaScript é uma linguagem de alto nível, o que significa que não usa codificações mais tradicionais de máquina, como “0” e “1”. É uma linguagem versátil e amigável para iniciantes.</p>
+                            <p>JavaScript é uma linguagem de programação que permite a criação de páginas interativas na internet. Ela é uma das principais tecnologias da World Wide Web e é usada para melhorar a experiência do usuário.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Menu de navegação com a lista de programadores -->
             <nav class="listagem">
                 <ul>
                     <li class="programador ativo" id="python">
@@ -206,6 +210,7 @@
             </nav>
         </div>
     </main>
+    <!-- Link para o JavaScript principal do site -->
     <script src="./src/js/index.js"></script>
 </body>
 

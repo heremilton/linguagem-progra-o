@@ -1,39 +1,48 @@
-@media(max-width: 750px){
-    .programadores{
+/* Responsivo: Ajustes para telas menores que 750px */
+@media(max-width: 750px) {
+    
+    /* Container dos programadores - Ajusta para exibir em coluna e centralizar conteúdo */
+    .programadores {
         flex-direction: column;
         align-items: center;
         padding: 30px 0;
     }
 
-    .cartao-programador{
+    /* Limita a largura dos cartões individuais de programador */
+    .cartao-programador {
         max-width: 300px;
     }
 
-    .cartao-programador .programador-informacoes{
+    /* Define o espaçamento e o posicionamento das informações dentro do cartão de programador */
+    .cartao-programador .programador-informacoes {
         padding: 60px 30px 30px;
         margin-top: -50px;
     }
 
-    .cartao-programador .cartao-informacoes h3{
+    /* Define o tamanho da fonte para o título dentro das informações do cartão */
+    .cartao-programador .cartao-informacoes h3 {
         font-size: 16px;
-
     }
-    .listagem{
+
+    /* Limita a largura máxima do container de listagem */
+    .listagem {
         max-width: 360px;
     }
 
-    .listagem .programador{
+    /* Ajusta os cartões de programadores na listagem */
+    .listagem .programador {
         width: 45%;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         margin-bottom: 0;
         border-radius: 8px;
     }
-    .listagem ul{
+
+    /* Exibe os itens de listagem como flexíveis, centralizando e organizando com espaçamento */
+    .listagem ul {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 8px;
     }
-
 }
